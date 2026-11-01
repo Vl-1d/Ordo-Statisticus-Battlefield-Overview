@@ -1,0 +1,39 @@
+name: publier la version Linux
+
+# Branche « linux » : crée la pré-version « vX.Y.Z-linux » avec l'archive Linux. Pré-version et jamais
+# « dernière version » : le téléchargement par défaut du dépôt reste l'application Windows.
+on:
+  push:
+    branches: [linux]
+    paths: ["*-linux-x86_64.tar.gz", "VERSION-LINUX"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Numéro de version et archive
+        id: v
+        run: |
+          echo "tag=v$(tr -d '[:space:]' < VERSION-LINUX)-linux" >> "$GITHUB_OUTPUT"
+          echo "archive=$(ls *-linux-x86_64.tar.gz | sort -V | tail -1)" >> "$GITHUB_OUTPUT"
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.v.outputs.tag }}
+          name: Ordo Statisticus ${{ steps.v.outputs.tag }} (Linux, test)
+          target_commitish: ${{ github.sha }}
+          prerelease: true
+          make_latest: false
+          files: ${{ steps.v.outputs.archive }}
+          body: |
+            **Version Linux de test** (x86_64). La version par défaut reste l'application Windows.
+
+            1. Télécharger l'archive ci-dessous et la décompresser.
+            2. Lancer `./OrdoStatisticus_Battlefield_Overview` : l'interface s'ouvre dans le navigateur.
+            3. Facultatif : `./install.sh` l'ajoute au menu des applications (sans droits administrateur), `./uninstall.sh` la retire.
+
+            Tabletop Simulator : version Linux native (Steam). Détails : LISEZMOI.txt dans l'archive.
