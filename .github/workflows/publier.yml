@@ -1,0 +1,34 @@
+name: publier la version
+
+# À chaque nouvel exécutable déposé dans ce dépôt (avec son numéro dans VERSION), crée la Release
+# « vX.Y.Z » correspondante : c'est elle que les joueurs téléchargent (lien « dernière version »).
+on:
+  push:
+    branches: [main]
+    paths: ["OrdoStatisticus_Battlefield_Overview.exe", "VERSION"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Numéro de version
+        id: v
+        run: echo "tag=v$(tr -d '[:space:]' < VERSION)" >> "$GITHUB_OUTPUT"
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.v.outputs.tag }}
+          name: Ordo Statisticus ${{ steps.v.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          make_latest: true
+          files: OrdoStatisticus_Battlefield_Overview.exe
+          body: |
+            Télécharger **OrdoStatisticus_Battlefield_Overview.exe** ci-dessous et le lancer : l'interface s'ouvre dans le navigateur.
+
+            Windows peut afficher « Windows a protégé votre ordinateur » (programme non signé) : **Informations complémentaires > Exécuter quand même**.
+
+            Rien à installer (tout est inclus). Mode d'emploi : [GUIDE.md](https://github.com/Vl-1d/Ordo-Statisticus-Battlefield-Overview/blob/main/GUIDE.md).

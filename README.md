@@ -6,6 +6,8 @@
 
 <p align="center"><a href="../../releases/latest"><strong>⬇ Télécharger l'application Windows (dernière version)</strong></a></p>
 
+<p align="center"><sub>Lien direct : <a href="../../raw/main/OrdoStatisticus_Battlefield_Overview.exe">OrdoStatisticus_Battlefield_Overview.exe</a></sub></p>
+
 ---
 
 ## Ce que fait l'application
