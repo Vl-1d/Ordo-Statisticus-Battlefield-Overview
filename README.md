@@ -8,6 +8,8 @@
 
 <p align="center"><sub>Lien direct : <a href="../../raw/main/OrdoStatisticus_Battlefield_Overview.exe">OrdoStatisticus_Battlefield_Overview.exe</a></sub></p>
 
+<p align="center"><sub>🐧 Linux (version de test) : <a href="../../releases/tag/v0.8.3-linux">archive Linux x86_64</a></sub></p>
+
 ---
 
 ## Ce que fait l'application
@@ -28,6 +30,10 @@ l'image du plan.
 2. Le lancer : l'interface s'ouvre dans votre navigateur.
 3. Windows peut afficher « Windows a protégé votre ordinateur » (programme non signé) :
    **Informations complémentaires > Exécuter quand même**.
+
+**Linux (test)** : télécharger l'archive de la [version Linux](../../releases/tag/v0.8.3-linux), la décompresser,
+puis lancer `./OrdoStatisticus_Battlefield_Overview` (ou `./install.sh` pour l'ajouter au menu des applications).
+Tabletop Simulator doit être la version Linux native (Steam).
 
 Rien d'autre à installer : tout est inclus dans l'exécutable. Les réglages et les parties sont rangés
 dans `Documents/Ordo Statisticus`.
