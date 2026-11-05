@@ -51,8 +51,9 @@ Mode d'emploi complet : **[GUIDE.md](GUIDE.md)**.
 
 ## Mises à jour et problèmes
 
-Télécharger la nouvelle version sur la page [Releases](../../releases) et remplacer l'ancien exécutable :
-réglages et parties sont conservés. Pour signaler un problème : onglet **Issues**, en joignant
+Depuis la v0.8.4, l'application indique son numéro de version et signale d'elle-même, par un bandeau, qu'une
+version plus récente est disponible. Il suffit alors de télécharger la nouvelle version sur la page
+[Releases](../../releases) et de remplacer l'ancien exécutable : réglages et parties sont conservés. Pour signaler un problème : onglet **Issues**, en joignant
 `Documents/Ordo Statisticus/journal.txt` et le dossier de la partie.
 
 <sub>Projet indépendant de fans, sans lien avec Games Workshop ni avec les auteurs de Tabletop Simulator
