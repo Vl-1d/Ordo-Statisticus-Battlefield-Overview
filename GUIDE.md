@@ -87,5 +87,11 @@ Page **Parties enregistrées** :
 
 ## 6. Mise à jour
 
-Télécharger le nouvel `OrdoStatisticus_Battlefield_Overview.exe` et remplacer l'ancien. Les réglages et les parties (dans
-`Documents/Ordo Statisticus`) sont conservés.
+Le numéro de la version utilisée est affiché en bas du menu de gauche, dans **Réglages > Version** et en pied de chaque
+rapport (`tts-extract version` en ligne de commande). Au lancement, l'application compare ce numéro à la dernière version
+publiée sur la page de téléchargement : si une version plus récente existe, un bandeau « Nouvelle version disponible »
+s'affiche et mène directement au téléchargement. La vérification se désactive dans **Réglages** ; sans connexion, rien ne
+bloque (la version est simplement indiquée « non vérifiée »).
+
+Pour mettre à jour : télécharger le nouvel `OrdoStatisticus_Battlefield_Overview.exe` et remplacer l'ancien. Les réglages
+et les parties (dans `Documents/Ordo Statisticus`) sont conservés.

@@ -8,6 +8,8 @@
 
 <p align="center"><sub>Lien direct : <a href="../../raw/main/OrdoStatisticus_Battlefield_Overview.exe">OrdoStatisticus_Battlefield_Overview.exe</a></sub></p>
 
+<p align="center"><sub>🐧 Linux (version de test) : <a href="../../releases/tag/v0.8.5-linux">archive Linux x86_64</a></sub></p>
+
 ---
 
 ## Ce que fait l'application
@@ -29,6 +31,10 @@ l'image du plan.
 3. Windows peut afficher « Windows a protégé votre ordinateur » (programme non signé) :
    **Informations complémentaires > Exécuter quand même**.
 
+**Linux (test)** : télécharger l'archive de la [version Linux](../../releases/tag/v0.8.5-linux), la décompresser,
+puis lancer `./OrdoStatisticus_Battlefield_Overview` (ou `./install.sh` pour l'ajouter au menu des applications).
+Tabletop Simulator doit être la version Linux native (Steam).
+
 Rien d'autre à installer : tout est inclus dans l'exécutable. Les réglages et les parties sont rangés
 dans `Documents/Ordo Statisticus`.
 
@@ -45,8 +51,10 @@ Mode d'emploi complet : **[GUIDE.md](GUIDE.md)**.
 
 ## Mises à jour et problèmes
 
-Télécharger la nouvelle version sur la page [Releases](../../releases) et remplacer l'ancien exécutable :
-réglages et parties sont conservés. Pour signaler un problème : onglet **Issues**, en joignant
+Depuis la v0.8.4, l'application indique son numéro de version et signale d'elle-même, par un bandeau, qu'une
+version plus récente est disponible. Il suffit alors de télécharger la nouvelle version sur la page
+[Releases](../../releases) et de remplacer l'ancien exécutable : réglages et parties sont conservés. La version
+Linux fait de même depuis la v0.8.5 (elle signale les nouvelles versions Linux). Pour signaler un problème : onglet **Issues**, en joignant
 `Documents/Ordo Statisticus/journal.txt` et le dossier de la partie.
 
 <sub>Projet indépendant de fans, sans lien avec Games Workshop ni avec les auteurs de Tabletop Simulator
