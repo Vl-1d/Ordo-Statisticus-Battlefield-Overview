@@ -8,7 +8,7 @@
 
 <p align="center"><sub>Lien direct : <a href="../../raw/main/OrdoStatisticus_Battlefield_Overview.exe">OrdoStatisticus_Battlefield_Overview.exe</a></sub></p>
 
-<p align="center"><sub>🐧 Linux (version de test) : <a href="../../releases/tag/v0.8.5-linux">archive Linux x86_64</a></sub></p>
+<p align="center"><sub>🐧 Linux (version de test) : <a href="../../releases/tag/v0.8.8-linux">archive Linux x86_64</a></sub></p>
 
 ---
 
@@ -19,9 +19,10 @@ positions des figurines, PV, pertes, déplacements et charges, score (primaires 
 secondaires tirées, marquées et défaussées, contrôle des objectifs (somme des OC), décors, empreintes et
 zones de déploiement.
 
-À la fin : un **rapport HTML** à rejouer phase par phase (plan de la table, ombre au sol des grosses
-figurines, panneaux par joueur), à annoter au **pinceau**, et un message **Discord** avec le score et
-l'image du plan.
+À la fin : un **rapport HTML** à rejouer phase par phase (plan de la table quadrillé au pouce, ombre au sol
+des grosses figurines et coque des véhicules, arrivées de réserve, panneaux par joueur), à annoter au
+**pinceau**, avec un outil de **mesure** (main levée, socle à socle, coque à coque) et les **lignes de vue**
+de la figurine cliquée ; et un message **Discord** avec le score et l'image du plan.
 
 ## Installation
 
@@ -31,7 +32,7 @@ l'image du plan.
 3. Windows peut afficher « Windows a protégé votre ordinateur » (programme non signé) :
    **Informations complémentaires > Exécuter quand même**.
 
-**Linux (test)** : télécharger l'archive de la [version Linux](../../releases/tag/v0.8.5-linux), la décompresser,
+**Linux (test)** : télécharger l'archive de la [version Linux](../../releases/tag/v0.8.8-linux), la décompresser,
 puis lancer `./OrdoStatisticus_Battlefield_Overview` (ou `./install.sh` pour l'ajouter au menu des applications).
 Tabletop Simulator doit être la version Linux native (Steam).
 
