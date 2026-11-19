@@ -68,7 +68,8 @@ disque immédiatement.
 Page **Parties enregistrées** :
 
 - **Rapport** : ouvre le rapport. Les dessins du pinceau y sont enregistrés automatiquement quand vous
-  quittez le mode pinceau.
+  quittez le mode pinceau. Cliquer une figurine montre ses **lignes de vue** ; le bouton **Mesure** mesure
+  une distance (main levée, socle à socle ou de coque à coque).
 - **Régénérer** : recalcule le rapport (après une mise à jour de l'application, par exemple).
 - **Discord** : publie la partie (webhook à renseigner dans **Réglages**).
 - **Reprendre** : une partie « En cours » qui n'est plus lue (application fermée, plantage) continue dans le
